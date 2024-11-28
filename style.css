@@ -1,0 +1,280 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #FFD700, #FF4500); /* Vibrant gradient */
+    filter: drop-shadow(0px 0px 10px rgba(255, 165, 0, 0.8)); /* Glow effect */
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    position: relative;
+}
+
+img {
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: 0.7s;
+    padding: 10px 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.batch {
+    font-weight: bold;
+    color: #FFD700; /* Gold color for the batch text */
+    margin-top: 10px;
+}
+
+
+/* Highlight the clicked image and button */
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider8:target ~ .imgContainer #img8,
+#slider8:target ~ .imgContainer #button8 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider9:target ~ .imgContainer #img9,
+#slider9:target ~ .imgContainer #button9 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider10:target ~ .imgContainer #img10,
+#slider10:target ~ .imgContainer #button10 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider11:target ~ .imgContainer #img11,
+#slider11:target ~ .imgContainer #button11 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider12:target ~ .imgContainer #img12,
+#slider12:target ~ .imgContainer #button12 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider13:target ~ .imgContainer #img13,
+#slider13:target ~ .imgContainer #button13 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider14:target ~ .imgContainer #img14,
+#slider14:target ~ .imgContainer #button14 {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+/* Restore hover effect when an image is clicked */
+#slider1:target ~ .imgContainer #button1:hover,
+#slider2:target ~ .imgContainer #button2:hover,
+#slider3:target ~ .imgContainer #button3:hover,
+#slider4:target ~ .imgContainer #button4:hover,
+#slider5:target ~ .imgContainer #button5:hover,
+#slider6:target ~ .imgContainer #button6:hover,
+#slider7:target ~ .imgContainer #button7:hover,
+#slider8:target ~ .imgContainer #button8:hover,
+#slider9:target ~ .imgContainer #button9:hover,
+#slider10:target ~ .imgContainer #button10:hover,
+#slider11:target ~ .imgContainer #button11:hover,
+#slider12:target ~ .imgContainer #button12:hover,
+#slider13:target ~ .imgContainer #button13:hover,
+#slider14:target ~ .imgContainer #button14:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Text visibility when slider is clicked */
+#slider1:target ~ .imgContainer #text1,
+#slider2:target ~ .imgContainer #text2,
+#slider3:target ~ .imgContainer #text3,
+#slider4:target ~ .imgContainer #text4,
+#slider5:target ~ .imgContainer #text5,
+#slider6:target ~ .imgContainer #text6,
+#slider7:target ~ .imgContainer #text7,
+#slider8:target ~ .imgContainer #text8,
+#slider9:target ~ .imgContainer #text9,
+#slider10:target ~ .imgContainer #text10,
+#slider11:target ~ .imgContainer #text11,
+#slider12:target ~ .imgContainer #text12,
+#slider13:target ~ .imgContainer #text13,
+#slider14:target ~ .imgContainer #text14{
+    opacity: 1;
+}
+
+/* Slider positions */
+#slider1:target ~ .imgContainer {
+    left: 120%;
+}
+#slider2:target ~ .imgContainer {
+    left: 100%;
+}
+#slider3:target ~ .imgContainer {
+    left: 80%;
+}
+#slider4:target ~ .imgContainer {
+    left: 60%;
+}
+#slider5:target ~ .imgContainer {
+    left: 40%;
+}
+#slider6:target ~ .imgContainer {
+    left: 20%;
+}
+#slider7:target ~ .imgContainer {
+    left: 0%;
+}
+#slider8:target ~ .imgContainer {
+    left: -20%;
+}
+#slider9:target ~ .imgContainer {
+    left: -40%;
+}
+#slider10:target ~ .imgContainer {
+    left: -60%;
+}
+#slider11:target ~ .imgContainer {
+    left: -80%;
+}
+#slider12:target ~ .imgContainer {
+    left: -100%;
+}
+#slider13:target ~ .imgContainer {
+    left: -120%;
+}
+#slider14:target ~ .imgContainer {
+    left: -140%;
+}

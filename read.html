@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="more.css" />
+  </head>
+  <body>
+    <a href="KFF.html">
+        <img src="images/okay.png" alt="logo" class="logo">
+    </a>
+
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/mission.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+                MISSION
+              </h2>
+            <p class="text">We develop socially competent and highly skilled college graduates from the poorest but brightest and 
+                most goal oriented in the slum, by paying their education in good schools and also training them in 
+                social and leadership skills in order to get the best of two worlds: The proactiveness in the successful 
+                from the slum combined with social and technical skills needed to make the class journey. 
+                These become hardworking, goal-oriented, and flexible professionals and entrepreneurs.</p>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/vision.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+                VISION
+              </h2>
+                <p class="text">The Kff Foundation envisions empowering underprivileged yet talented youth in Cebu City to become future leaders 
+                and role models. By addressing environmental, cultural, and social challenges, the foundation nurtures their 
+                potential through comprehensive support, education, and leadership development.
+                <br>
+                The goal is to enable these individuals to break societal barriers, achieve professional 
+                excellence, and contribute to a prosperous Philippines. The foundation serves as an extended family, 
+                fostering resilience, character, and a network to ensure success while promoting sustainability 
+                for future generations.</p>
+         
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/history.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+                HISTORY
+              </h2>
+            <p class="text">The foundation started as a promise. A promise of commitment eventually grew and helped lots of young, 
+                determined, intelligent individuals of Cebu. The year was 1983 when a European went to the Philippines 
+                and chose Cebu as his point of destination.
+                <br>
+                He was a government doctor who specialized in the care and treatment of problem youths in parts of Europe.
+                During his stay in the country, among many other people he met a boy. Inspired by the boy's dedication, 
+                he helped him continue his studies and fulfill his dreams. Through time, the family of scholars expanded 
+                and the promise went on in the name of Kff Foundation.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
